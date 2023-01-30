@@ -20,13 +20,7 @@ print ('''
 Version 1.1 •2023/1/30•
 							C0d3d by Sm3R
 ┌─────────────────────────────────────────────┐
-│        لطفا به وبسایت های .gov اتک نزنید       │
-├─────────────────────────────────────────────┤
-│                 New stuff:                  │
-│          [+] Optimization                   │
-│          [+] Changed Output                 │
-│          [+] Added Url Parser               │
-├─────────────────────────────────────────────┤
+│               cOd3d By  SM3R
 │ Telegram : t.me/imsmer │
 └─────────────────────────────────────────────┘''')
 
@@ -209,7 +203,7 @@ def InputOption(question,options,default):
 
 def CheckerOption():
 	global proxies
-	N = str(input("> Do you need to get socks list?(y/n,default=y):"))
+	N = str(input("> mikhay list proxy haro begiri?(y/n,pishfarz=y):"))
 	if N == 'y' or N == "" :
 		downloadsocks(choice)
 	else:
