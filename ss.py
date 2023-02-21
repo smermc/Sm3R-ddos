@@ -4,7 +4,7 @@ print ('''
   CC/      CC/       |-------------|/ 
   CC/      CC/       |  Layer 7-4  |/ 
   CC/////  CC/////   |  ddos  tool |/ 
-   CCCCC/   CCCCC/   |_|/
+   CCCCC/   CCCCC/   |_____________|/
 >--------------------------------------------->
 Version 1.0 (2023)
     C0d3d by Sm3R
