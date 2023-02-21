@@ -24,7 +24,7 @@ import _thread
 site = input("_>address site ra vared knid => ")
 thread_count = input("_>qodrat ra vared knid => ")
 ip = socket.gethostbyname(site)
-UDP_PORT = 80
+HTTPS_PORT = 443
 MESSAGE = '@sm3rmc!!!'
 print("_>IP HADAF:", ip)
 print("_>PORT HADAF:", UDP_PORT)
